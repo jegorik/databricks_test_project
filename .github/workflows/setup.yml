@@ -15,6 +15,10 @@ jobs:
         env:
           DATABRICKS_WAREHOUSE_ID: ${{ secrets.WAREHOUSE_ID }}
         run: |
-          # Здесь можно настроить подстановку значений для деплоя
-          envsubst < app.yaml > app.processed.yaml
-          mv app.processed.yaml app.yaml
+          # Обратите внимание на измененный путь к файлу
+          envsubst < test-project-streamlit-app/app.yaml > test-project-streamlit-app/app.processed.yaml
+          mv test-project-streamlit-app/app.processed.yaml test-project-streamlit-app/app.yaml
+      
+      - name: Verify configuration (masked)
+        run: |
+          grep -v "DATABRICKS_WAREHOUSE_ID" test-project-streamlit-app/app.yaml
