@@ -4,7 +4,7 @@
 
 2. **Create a new catalog** named `test_project` using SQL inside the `Test_project_notebook`:
     ```sql
-    CREATE CATALOG my_new_catalog;
+    CREATE CATALOG test_project;
     ```
 
 3. **Drop the default schema** in the newly created catalog:
@@ -47,3 +47,9 @@
 8. After the application is created, **find `app.py`** in `Workspace/Users/<your account data>/databricks_apps/test-project-streamlit-app`.
 
 9. **Refactor `app.py`** according to your needs.
+
+## Local setup
+
+1. Create a `.env` file in the `test-project-streamlit-app/` directory
+2. Add the following variables:
+DATABRICKS_WAREHOUSE_ID=<contact the project owner for the value>
