@@ -85,7 +85,7 @@ def footer(version="v1.0.0"):
 def delete_warning():
     """Render a delete warning message"""
     return """
-    <div style="color: #e74c3c; padding: 10px; background-color: #fadbd8; border-radius: 5px; margin-bottom: 20px;">
+    <div style="color: #e74c3c; padding: 10px; background-color: #fadbd3; border-radius: 5px; margin-bottom: 20px;">
         <strong>Warning:</strong> Deleting an entry is permanent and cannot be undone.
     </div>
     """
@@ -93,7 +93,7 @@ def delete_warning():
 def delete_confirmation():
     """Render a delete confirmation message"""
     return """
-    <div style="background-color: #f8d7da; padding: 15px; border-radius: 5px; margin: 20px 0;">
+    <div style="background-color: #FF8C00; padding: 15px; border-radius: 5px; margin: 20px 0;">
         <strong>Confirmation Required</strong>
         <p>Please confirm that you want to permanently delete this entry.</p>
     </div>
