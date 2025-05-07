@@ -1,1 +1,4 @@
-streamlit==1.38.0
+streamlit>=1.22.0
+pandas>=1.5.3
+databricks-sql-connector>=2.5.0
+databricks-sdk>=0.1.0
