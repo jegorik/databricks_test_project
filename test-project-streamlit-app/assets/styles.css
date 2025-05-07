@@ -1,0 +1,264 @@
+/* File: assets/styles.css */
+
+/* Main container styling */
+.main {
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 20px;
+}
+
+/* Headers styling */
+h1 {
+    color: #4da6ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #4da6ff;
+    margin-bottom: 30px;
+}
+
+h2, h3 {
+    color: #4da6ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px 0;
+}
+
+/* Form styling */
+.stForm {
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Button styling */
+.stButton>button {
+    background-color: #4da6ff;
+    color: #121212;
+    border-radius: 5px;
+    padding: 10px 24px;
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.stButton>button:hover {
+    background-color: #3498db;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Delete button styling */
+.delete-btn>button {
+    background-color: #e74c3c;
+}
+
+.delete-btn>button:hover {
+    background-color: #c0392b;
+}
+
+/* Input fields styling */
+.stTextInput>div>div>input {
+    background-color: #3d3d3d;
+    color: #e0e0e0;
+    border-radius: 5px;
+    border: 1px solid #555;
+    padding: 10px;
+}
+
+/* Selectbox styling */
+.stSelectbox>div>div>div {
+    background-color: #3d3d3d;
+    color: #e0e0e0;
+}
+
+/* Dataframe styling */
+.dataframe-container {
+    background-color: #2d2d2d;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+}
+
+/* Tab styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 2px;
+    background-color: #1e1e1e;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 50px;
+    white-space: pre-wrap;
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    border-radius: 4px 4px 0 0;
+    gap: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #4da6ff;
+    color: #121212;
+}
+
+/* Card layout */
+.card {
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Success and error messages */
+.success-message {
+    background-color: #1e3a2d;
+    color: #a7e9c3;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #28a745;
+    margin: 20px 0;
+}
+
+.error-message {
+    background-color: #3a1e1e;
+    color: #e9a7a7;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #dc3545;
+    margin: 20px 0;
+}
+
+/* Tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    color: #e0e0e0;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #4d4d4d;
+    color: #e0e0e0;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Badge styling */
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #121212;
+    background-color: #4da6ff;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+/* Section headers */
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+.section-header-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #4da6ff;
+}
+
+/* Field labels */
+.field-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #e0e0e0;
+}
+
+/* Field help text */
+.field-help {
+    font-size: 12px;
+    color: #aaaaaa;
+    margin-top: 2px;
+}
+
+/* Checkbox */
+.stCheckbox>div>label>div:first-child {
+    background-color: #3d3d3d;
+    border-color: #555;
+}
+
+/* Radio buttons */
+.stRadio>div {
+    background-color: #2d2d2d;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Data display table */
+div.stDataFrame {
+    background-color: #2d2d2d;
+}
+
+div.stDataFrame [data-testid="stTable"] {
+    background-color: #3d3d3d;
+}
+
+div.stDataFrame th {
+    background-color: #4d4d4d;
+    color: #e0e0e0;
+}
+
+div.stDataFrame td {
+    color: #e0e0e0;
+}
+
+/* Dividers */
+hr {
+    border-color: #555;
+}
+
+/* Additional dark theme adjustments */
+[data-testid="stMarkdownContainer"] {
+    color: #e0e0e0;
+}
+
+[data-testid="stSidebar"] {
+    background-color: #1e1e1e;
+}
+
+[data-testid="stVerticalBlock"] {
+    gap: 10px;
+}
+
+/* Override Streamlit's default styles */
+.stApp {
+    background-color: #121212;
+}
+
+/* Format streamlit number inputs */
+[data-baseweb="input"] {
+    background-color: #3d3d3d;
+}
+
+[data-baseweb="base-input"] {
+    color: #e0e0e0;
+}
