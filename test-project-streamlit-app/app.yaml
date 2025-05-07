@@ -6,6 +6,6 @@ command: [
 
 env:
   - name: "DATABRICKS_WAREHOUSE_ID"
-    value: "<your warehouse id>"
+    value: ${{ secrets.WAREHOUSE_ID }}
   - name: STREAMLIT_BROWSER_GATHER_USAGE_STATS
     value: "false"
