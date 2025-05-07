@@ -15,7 +15,6 @@ jobs:
         env:
           DATABRICKS_WAREHOUSE_ID: ${{ secrets.WAREHOUSE_ID }}
         run: |
-          # Обратите внимание на измененный путь к файлу
           envsubst < test-project-streamlit-app/app.yaml > test-project-streamlit-app/app.processed.yaml
           mv test-project-streamlit-app/app.processed.yaml test-project-streamlit-app/app.yaml
       
