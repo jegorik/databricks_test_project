@@ -1,0 +1,20 @@
+name: Setup Configuration
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup configuration
+        env:
+          DATABRICKS_WAREHOUSE_ID: ${{ secrets.WAREHOUSE_ID }}
+        run: |
+          # Здесь можно настроить подстановку значений для деплоя
+          envsubst < app.yaml > app.processed.yaml
+          mv app.processed.yaml app.yaml
